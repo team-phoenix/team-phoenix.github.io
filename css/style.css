@@ -9,6 +9,16 @@
 */
 .fleft { float: left; }
 .fright { float: right; }
+.triangle {
+  display: block;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin: 0 auto;
+  background: url(images/t.png);
+  width: 24px;
+  height: 12px;
+}
 
 .top-icon {
   position: absolute;
