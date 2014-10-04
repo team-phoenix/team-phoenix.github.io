@@ -25,16 +25,24 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
         <script src="js/jquery.featureCarousel.min.js"></script>
+        <script src="js/showHide.js"></script>
         <script type="text/javascript">
           $(document).ready(function() {
             var carousel = $("#carousel").featureCarousel({
-              animationEasing: "linear"
+                animationEasing: "linear"
+              });
+              $("#but_prev").click(function () { carousel.prev(); });
+              $("#but_pause").click(function () { carousel.pause(); });
+              $("#but_start").click(function () { carousel.start(); });
+              $("#but_next").click(function () { carousel.next(); });
+              $(".show_hide").click(function() {$( this ).toggleClass("fa-arrow-circle-down fa-arrow-circle-up"); }).showHide({
+          		speed: 100,  // speed you want the toggle to happen
+          		easing: 'easeOutBounce',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+          		changeText: 1, // if you dont want the button text to change, set this to 0
+          		showText: 'Features',// the button text to show when a div is closed
+          		hideText: 'Close me' // the button text to show when a div is open
+          	 });
             });
-            $("#but_prev").click(function () { carousel.prev(); });
-            $("#but_pause").click(function () { carousel.pause(); });
-            $("#but_start").click(function () { carousel.start(); });
-            $("#but_next").click(function () { carousel.next(); });
-          });
         </script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -125,7 +133,7 @@
     											<p>It's awesome, it's free, download it now!</p>
 											</header>
 											<footer>
-												<a href="#" class="button medium icon fa-arrow-circle-down">Features</a>
+												<a href="#" rel="#Features" class="button medium icon fa-arrow-circle-down show_hide">Features</a>
 											</footer>
 										</section>
 									</div>
@@ -134,9 +142,8 @@
 
 						</div>
 				</div>
-				<div class="wrapper style1">
+				<div id="Features" class="wrapper style1 features-div">
 					<div class="inner">
-				
 						<!-- Feature 1 -->
 							<section class="container box feature1">
 								<div class="row">
