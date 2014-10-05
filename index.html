@@ -17,24 +17,20 @@
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
         <link rel="stylesheet" href="css/feature-carousel.css" />
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-        <script src="js/jquery.featureCarousel.min.js"></script>
         <script src="js/showHide.js"></script>
+
         <script type="text/javascript">
           $(document).ready(function() {
-            var carousel = $("#carousel").featureCarousel({
-                animationEasing: "linear"
-              });
-              $("#but_prev").click(function () { carousel.prev(); });
-              $("#but_pause").click(function () { carousel.pause(); });
-              $("#but_start").click(function () { carousel.start(); });
-              $("#but_next").click(function () { carousel.next(); });
               $(".show_hide").click(function() {$( this ).toggleClass("fa-arrow-circle-down fa-arrow-circle-up"); }).showHide({
           		speed: 100,  // speed you want the toggle to happen
           		easing: 'easeOutBounce',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
@@ -42,7 +38,16 @@
           		showText: 'Features',// the button text to show when a div is closed
           		hideText: 'Close me' // the button text to show when a div is open
           	 });
+
+             $('.bxslider').bxSlider({
+              minSlides: 2,
+              maxSlides: 2,
+              slideWidth: 900,
+              slideMargin: 10,
+              adaptiveHeight: true,
             });
+
+          });
         </script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -86,36 +91,17 @@
 									</div>
 								</header>
 
-							<!-- Banner -->
-
-                                    <div class="carousel-container">
-                                      <div id="carousel">
-                                        <div class="carousel-feature">
-                                          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/p1.png"></a>
-                                          <!-- <div class="carousel-caption"><p>The background color of the caption area can be changed using CSS. The opacity can be changed in the options, but it will also change the opacity of the text.</p></div> -->
-                                        </div>
-                                        <div class="carousel-feature">
-                                          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/p1.png"></a>
-                                          <!-- <div class="carousel-caption"><p>The background color of the caption area can be changed using CSS. The opacity can be changed in the options, but it will also change the opacity of the text.</p></div> -->
-                                        </div>
-                                        <div class="carousel-feature">
-                                          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/p1.png"></a>
-                                          <!-- <div class="carousel-caption"><p>The background color of the caption area can be changed using CSS. The opacity can be changed in the options, but it will also change the opacity of the text.</p></div> -->
-                                        </div>
-                                        <div class="carousel-feature">
-                                          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/p1.png"></a>
-                                          <!-- <div class="carousel-caption"><p>The background color of the caption area can be changed using CSS. The opacity can be changed in the options, but it will also change the opacity of the text.</p></div> -->
-                                        </div>
-                                      </div>
-
-                                      <div id="carousel-left"><img src="images/arrow-left.png" /></div>
-                                      <div id="carousel-right"><img src="images/arrow-right.png" /></div>
-                                    </div>
-                                    <div class="carousel-shadow"></div>
-
 						</div>
 					</div>
+
 				</div>
+                <ul class="bxslider">
+                    <li><img src="images/p1.png" /></li>
+                    <li><img src="images/p1.png" /></li>
+                    <li><img src="images/p1.png" /></li>
+                    <li><img src="images/p1.png" /></li>
+                    <li><img src="images/p1.png" /></li>
+                </ul>
 			</div>
 
 		<!-- Main Wrapper -->
