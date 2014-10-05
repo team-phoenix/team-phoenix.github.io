@@ -7,7 +7,7 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
- div.responsive img { width: auto; height: auto } 
+ div.responsive img { width: auto; height: auto }
 .fleft { float: left; }
 .fright { float: right; }
 .triangle {
@@ -859,34 +859,10 @@
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
-	#header-wrapper
-	{
-		background-color: #262626;
-		background-position: top left, center center;
-		background-size: auto, cover;
-	}
-	
-	#banner-wrapper
-	{
-	}
-	
-	#main-wrapper
-	{
-		background: #fff;
-	}
-
-	#footer-wrapper
-	{
-		position: relative;
-		background-image:		-moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)),		url('images/bg03.png'),		url('images/bg02.png');
-		background-image:		-webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)),	url('images/bg03.png'),		url('images/bg02.png');
-		background-image:		-o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)),		url('images/bg03.png'),		url('images/bg02.png');
-		background-image:		-ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)),		url('images/bg03.png'),		url('images/bg02.png');
-		background-image:		linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5)),			url('images/bg03.png'),		url('images/bg02.png');
-		background-repeat:		repeat-x,														no-repeat,					repeat;
-		background-size:		100% 100%,														100% 15em,					auto auto;
-		background-position:	top left,														top center,					top left;
-	}
+	#header-wrapper { background: #262626; }
+	#banner-wrapper { }
+	#main-wrapper { background: #fff;}
+	#footer-wrapper { background: #262626; }
 
 	.wrapper
 	{
@@ -941,7 +917,6 @@
 	#footer
 	{
 		margin-bottom: 0;
-		text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 		position: relative;
 		z-index: 2;
 	}
