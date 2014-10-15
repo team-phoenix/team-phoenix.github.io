@@ -859,10 +859,13 @@
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
-	#header-wrapper { background: #262626; }
+	#header-wrapper {
+	    background: #262626 url('images/bg2.png');
+     }
+
 	#banner-wrapper { }
 	#main-wrapper { background: #fff;}
-	#footer-wrapper { background: #262626; }
+	#footer-wrapper { background: #26282D; }
 
 	.wrapper
 	{
@@ -979,3 +982,78 @@
 		{
 			color: inherit;
 		}
+
+
+#footer-nav li {
+  float: left;
+  margin-right: 42px;
+}
+#footer-nav li a {
+  color: #767A7E;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+#footer-nav li a:hover {
+  color: #EAEAEA;
+}
+.footer-social-logos {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.footer-social-logos li {
+  float: left;
+  margin-right: 22px;
+}
+.footer-social-logos li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  background: url(images/footer-social-logos.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+  .footer-social-logos li a {
+    background: url(images/footer-social-logos@2x.png) no-repeat;
+    background-size: 311px 70px;
+  }
+}
+.footer-social-logos li.facebook a {
+  background-position: 0 0;
+}
+.footer-social-logos li.facebook a:hover {
+  background-position: 0 bottom;
+}
+.footer-social-logos li.pinterest a {
+  background-position: -56px 0;
+}
+.footer-social-logos li.pinterest a:hover {
+  background-position: -56px bottom;
+}
+.footer-social-logos li.twitter a {
+  background-position: -112px 0;
+}
+.footer-social-logos li.twitter a:hover {
+  background-position: -112px bottom;
+}
+.footer-social-logos li.youtube a {
+  background-position: -166px 0;
+}
+.footer-social-logos li.youtube a:hover {
+  background-position: -166px bottom;
+}
+.footer-social-logos li.instagram a {
+  background-position: -222px 0;
+}
+.footer-social-logos li.instagram a:hover {
+  background-position: -222px bottom;
+}
+.footer-social-logos li.googleplus a {
+  background-position: -279px 0;
+}
+.footer-social-logos li.googleplus a:hover {
+  background-position: -279px bottom;
+}
+.footer-social-logos li:last-child {
+  margin-right: 0;
+}
