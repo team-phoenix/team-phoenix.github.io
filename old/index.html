@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Phoenix</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        <link rel="shortcut icon" href="fav.png" />
+        <noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+        <link rel="stylesheet" href="css/feature-carousel.css" />
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+        <script src="js/showHide.js"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function() {
+              $(".show_hide").click(function() {$( this ).toggleClass("fa-arrow-circle-down fa-arrow-circle-up"); }).showHide({
+          		speed: 100,  // speed you want the toggle to happen
+          		easing: 'easeOutBounce',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+          		changeText: 1, // if you dont want the button text to change, set this to 0
+          		showText: 'Features',// the button text to show when a div is closed
+          		hideText: 'Close me' // the button text to show when a div is open
+          	 });
+
+             $('.bxslider').bxSlider({
+              minSlides: 2,
+              maxSlides: 2,
+              slideWidth: 1000,
+              slideMargin: 50,
+              adaptiveHeight: false,
+            });
+
+          });
+        </script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Header -->
+								<header id="header">
+									<div class="inner">
+                                         <div class="top-icon"></div>
+										<!-- Logo -->
+											<h1><a href="index.html" id="logo">Phoenix</a></h1>
+
+										<!-- Nav -->
+											<nav id="nav">
+												<ul>
+													<li class="current_page_item"><a href="index.html">About</a></li>
+													<li>
+														<a href="">Download</a>
+														<ul>
+															<li><a href="#">Lorem ipsum dolor</a></li>
+															<li>
+																<a href="">Phasellus consequat</a>
+																<ul>
+																	<li><a href="#">Lorem ipsum dolor</a></li>
+																</ul>
+															</li>
+															<li><a href="#">Veroeros feugiat</a></li>
+														</ul>
+													</li>
+													<li><a href="left-sidebar.html">Github</a></li>
+												</ul>
+											</nav>
+									
+									</div>
+								</header>
+
+						</div>
+					</div>
+
+				</div>
+                <ul class="bxslider">
+                    <li><img src="images/p1.png" /></li>
+                    <li><img src="images/p1.png" /></li>
+                </ul>
+			</div>
+
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="wrapper style2">
+					<div class="inner">
+
+						<!-- Feature 2 -->
+							<section class="container box feature2">
+								<div class="row">
+									<div class="12u">
+										<section>
+											<header class="first">
+    											<h2>What are you wating for?</h2>
+    											<p>It's awesome, it's free, download it now!</p>
+											</header>
+											<footer>
+												<a href="#" rel="#Features" class="button medium icon fa-arrow-circle-down show_hide">Features</a>
+											</footer>
+										</section>
+									</div>
+								</div>
+							</section>
+
+						</div>
+				</div>
+				<div id="Features">
+                    <div class="triangle"></div>
+					<div class="inner wrapper style1 features-div">
+						<!-- Feature 1 -->
+							<section class="container box feature1">
+								<div class="row">
+									<div class="12u">
+										<header class="first">
+											<h2>Phoenix awesome features</h2>
+											<p>know more about what give to you</p>
+										</header>
+									</div>
+								</div>
+								<div class="row">
+									<div class="4u">
+										<section>
+											<a href="#" class="image featured"><img src="images/p1.png" alt="" /></a>
+											<header class="second icon fa-user">
+												<h3>Beautiful UI</h3>
+												<p>Simple yet functional</p>
+											</header>
+										</section>
+									</div>
+									<div class="4u">
+										<section>
+											<a href="#" class="image featured"><img src="images/p1.png" alt="" /></a>
+											<header class="second icon fa-cog">
+												<h3>Customizable</h3>
+												<p>Change everything</p>
+											</header>
+										</section>
+									</div>
+									<div class="4u">
+										<section>
+											<a href="#" class="image featured"><img src="images/p1.png" alt="" /></a>
+											<header class="second icon fa-bar-chart-o">
+												<h3>Performance</h3>
+												<p>Optimized for any OS</p>
+											</header>
+										</section>
+									</div>
+								</div>
+							</section>
+
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+                    Phoenix 2014
+                      <ul class="footer-social-logos">
+              			<li class="facebook"><a href="">Facebook</a></li>
+              			<li class="youtube"><a href="">YouTube</a></li>
+              			<li class="googleplus"><a href="">Google+</a></li>
+              		  </ul>
+                    <div class="clr"></div>
+				</footer>
+			</div>
+
+	</body>
+</html>

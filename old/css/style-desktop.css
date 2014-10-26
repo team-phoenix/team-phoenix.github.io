@@ -29,7 +29,7 @@
 
 	#header-wrapper
 	{
-		padding: 1em 0;
+		padding: 3em 0;
 	}
 	
 	#banner-wrapper
@@ -42,7 +42,7 @@
 
 	#footer-wrapper
 	{
-		padding: .5em 0 2em 0;
+		padding: 1em 0 2em 0;
 	}
 
 	.wrapper
@@ -54,26 +54,36 @@
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header-wrapper { 	}
+	#header
+	{
+		position: relative;
+		padding: 0.75em;
+	}
 
 		#header .inner
 		{
-
+			position: relative;
+			height: 5.5em;
+			text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 		}
 	
 		#header h1
 		{
-
+			position: absolute;
+			left: 1.75em;
+			top: 50%;
+			margin-top: -0.65em;
+			font-size: 1.5em;
+			color: #fff;
 		}
     #logo {
       display: inline-block;
       background: url(images/logo.png);
       width: 210px;
       height: 65px;
+      margin-top: -20px;
       float: left;
       font-size: 0px;
-      margin-top: -10px;
-      margin-bottom: 20px;
     }
 
 /*********************************************************************************/
@@ -82,40 +92,38 @@
 
 	#nav
 	{
-	    margin: 0 auto;
-        text-align: center;
-        width: 500px;
+		position: absolute;
+		right: 2em;
+		top: 0;
+		line-height: 5.5em;
 	}
 	
 		#nav > ul > li
 		{
 			float: left;
-            margin-top: 10px;
 			padding: 0 0.8em 0 0.8em;
 		}
 		
 			#nav > ul > li > a,
 			#nav > ul > li > span
 			{
-				color: #DBDBDB;
+				color: #fff;
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 700;
 				font-size: 0.95em;
 				letter-spacing: 0.075em;
-				padding: 0.9em 2em;
+				padding: 0.5em 0.8em 0.5em 0.8em;
+				border-radius: 6px;
 				outline: 0;
-                background: #3B3B3A;
-                border-radius: 3px;
-                border: 1px solid #171717;
-                box-shadow: inset 0px 1px 0px rgba(255,255,255,.1), inset 0px -1px 0px rgba(0,0,0,.2);
 			}
 
-				#nav a:focus
+				#nav > ul > li.active > a,
+				#nav > ul > li.current_page_item > a,
+				#nav > ul > li.active > span,
+				#nav > ul > li.current_page_item > span
 				{
-                    border-color: rgba(0,0,0,.4);
-                    background: #1C1C1C;
-                    box-shadow: none;
+
 				}
 
 			#nav > ul > li:last-child

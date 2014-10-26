@@ -7,17 +7,42 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+ div.responsive img { width: auto; height: auto }
+.fleft { float: left; }
+.fright { float: right; }
+.triangle {
+  display: block;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin: 0 auto;
+  background: url(images/t.png);
+  width: 24px;
+  height: 12px;
+}
 
-
-.clr { clear: both; }
+.top-icon {
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin: 0 auto;
+  background: url(images/icon.png);
+  width: 85px;
+  height: 85px;
+}
 
 .dark {
-  background-color: #262626;
-  color: #fff !important;
+  background-color: #202020;
+  color: #777;
 }
-.dark h2 {
-    color: #F1F1F1 !important;
-    text-shadow: 0 !important; 
+
+#Features {
+  display: none;
+}
+.style2 {
+  padding: 50px 0px !important;
 }
 
 /*********************************************************************************/
@@ -26,7 +51,7 @@
 
 	body
 	{
-		background: #FFF;
+		background: #303238 url('images/bg01.png');
 	}
 
 		body.is-loading *
@@ -191,7 +216,7 @@
 			{
 				margin: 0 0 0.25em 0;
 			}
-
+			
 			header p
 			{
 				display: block;
@@ -834,28 +859,13 @@
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
-	#header-wrapper
-	{
-		background: linear-gradient(to bottom, #333 0%,#212121 100%);
-        box-shadow: inset 0px -1px 0px rgba(255,255,255,.05), 0px 3px 4px rgba(0,0,0,.5);
-        z-index: 9999;
-        position: relative;
+	#header-wrapper {
+	    background: #262626 url('images/bg2.png');
+     }
 
-	}
-	
-	#banner-wrapper
-	{
-	}
-	
-	#main-wrapper
-	{
-		background: #FFF;
-	}
-
-	#footer-wrapper
-	{
-		background: #333;
-	}
+	#banner-wrapper { }
+	#main-wrapper { background: #fff;}
+	#footer-wrapper { background: #26282D; }
 
 	.wrapper
 	{
@@ -910,7 +920,6 @@
 	#footer
 	{
 		margin-bottom: 0;
-		text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 		position: relative;
 		z-index: 2;
 	}
@@ -973,7 +982,7 @@
 		{
 			color: inherit;
 		}
-        
+
 /* FOOTER SOCIAL ICONS */
 
 #footer-nav li { float: left; margin-right: 42px; }
