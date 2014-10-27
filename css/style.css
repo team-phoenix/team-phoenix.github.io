@@ -8,6 +8,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.left { float: left; text-align: left; }
+.right { float: right; }
 
 .clr { clear: both; }
 
@@ -17,7 +19,7 @@
 }
 .dark h2 {
     color: #F1F1F1 !important;
-    text-shadow: 0 !important; 
+    text-shadow: 0 !important;
 }
 
 /*********************************************************************************/
